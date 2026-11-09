@@ -1,0 +1,30 @@
+Modelo Simulink: Controlador | ID: 957406c4cea24c17
+Log limpo.
+[TX] C,0
+[FW] [OK]
+[TX] V,0
+[FW] [OK]
+[TX] M,0
+[TX] RUN,1
+[APLICAR] Confira as respostas do firmware. PARAR PLANTA interrompe o ensaio.
+[FW] [OK]
+[FW] [OK]
+[TX] C,0
+[FW] [OK]
+[TX] V,0.5
+[FW] [OK]
+[TX] M,0
+[FW] [OK]
+[TX] RUN,1
+[APLICAR] Confira as respostas do firmware. PARAR PLANTA interrompe o ensaio.
+[FW] [OK]
+[TX] C,0
+[FW] [OK]
+[TX] V,0
+[FW] [OK]
+[TX] M,0
+[FW] [OK]
+[TX] RUN,1
+[APLICAR] Confira as respostas do firmware. PARAR PLANTA interrompe o ensaio.
+[FW] [OK]
+[DOWNLOAD] Dados salvos em: C:\Users\Thiago\Documents\PlatformIO\Projects\TESTE\GUI\ensaioMA_IDENTIFICACAO_PLANTA_TENTATIVA1.csv

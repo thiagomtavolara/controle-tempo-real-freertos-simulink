@@ -1,0 +1,12 @@
+Modelo Simulink: Controlador | ID: 9c4e49d229ad3781
+Log limpo.
+[TX] R,28
+[TX] C,0
+[FW] [OK]
+[TX] M,1
+[FW] [OK]
+[FW] [OK]
+[TX] RUN,1
+[APLICAR] Confira as respostas do firmware. PARAR PLANTA interrompe o ensaio.
+[FW] [OK]
+[DOWNLOAD] Dados salvos em: C:\Users\Thiago\Desktop\ensaio_planta_atraso\2 — PID, referência de 30 °C\ensaioPID_VALIDACAO_PLANTA_ATRASO_31_10_REF28.csv

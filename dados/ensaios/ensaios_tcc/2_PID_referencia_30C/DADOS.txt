@@ -1,0 +1,11 @@
+Nome e data do ensaio:ensaioPID_VALIDACAO_PLANTA_ATRASO_31_10_REF30
+Controlador:PID
+Referência:30
+Parâmetros do controlador: 
+parametro_ajustavel('P',  4,  0, 100);
+parametro_ajustavel('I', 1, 0, 20);
+parametro_ajustavel('D', 0.2, 0, 10);
+parametro_ajustavel('N',  5, 0, 100);
+Tempo de amostragem:0.2s
+Condição do cooler:0
+Temperatura inicial:23.46

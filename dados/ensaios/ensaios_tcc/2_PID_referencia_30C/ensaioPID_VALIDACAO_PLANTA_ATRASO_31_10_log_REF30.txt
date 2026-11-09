@@ -1,0 +1,27 @@
+Modelo Simulink: Controlador | ID: 9c4e49d229ad3781
+Selecione a porta serial e conecte. Graficos aguardando dados.
+[CONECTAR] Conectado com sucesso em COM6 (115200 baud).
+[TX] RUN,0
+[TX] INFO
+[FW] [OK] Parada solicitada
+[TX] HELLO,9c4e49d229ad3781
+[FW] [INFO],9c4e49d229ad3781,4,0.2,MA_SIM_3
+[PACOTE] Conferido. Selecione o modo e clique Aplicar / iniciar.
+[FW] [HELLO],1
+[TX] LISTAR
+[FW] [OK]
+[FW] [PAR],1,0.200000
+[FW] [PAR],2,1.000000
+[FW] [PAR],3,5.000000
+[FW] [PAR],4,4.000000
+[FW] [LISTA_FIM]
+[TX] R,30
+[TX] C,0
+[FW] [OK]
+[FW] [OK]
+[TX] M,1
+[TX] RUN,1
+[APLICAR] Confira as respostas do firmware. PARAR PLANTA interrompe o ensaio.
+[FW] [OK]
+[FW] [OK]
+[DOWNLOAD] Dados salvos em: C:\Users\Thiago\Desktop\ensaio_planta_atraso\1 — PID, referência de 28 °C\ENSAIO_PLANTA.csv

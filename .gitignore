@@ -1,0 +1,50 @@
+# ---------------------------------------------------------------
+# PlatformIO / VS Code
+# ---------------------------------------------------------------
+.pio/
+.vscode/
+
+# ---------------------------------------------------------------
+# Simulink: geracao de codigo e cache
+# O controlador integrado fica versionado em src/gerado/.
+# Estas pastas sao recriadas por configurar_pastas_simulink e pelo
+# Build This Subsystem.
+# ---------------------------------------------------------------
+codigo_gerado_simulink/
+cache_simulink/
+slprj/
+*_ert_rtw/
+*_grt_rtw/
+*.slxc
+*.autosave
+*.slx.r20*
+*.mdl.r20*
+sfprj/
+
+# ---------------------------------------------------------------
+# MATLAB: arquivos temporarios
+# ---------------------------------------------------------------
+*.asv
+*.m~
+*.mex*
+octave-workspace
+
+# ---------------------------------------------------------------
+# Binarios de compilacao
+# ---------------------------------------------------------------
+*.exe
+*.obj
+*.o
+*.elf
+*.hex
+
+# ---------------------------------------------------------------
+# Sistema operacional
+# ---------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+
+# Observacao: arquivos .mat e .csv NAO sao ignorados de proposito.
+# registro_parametros.mat e os ensaios em dados/ fazem parte do projeto.
