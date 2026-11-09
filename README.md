@@ -7,12 +7,7 @@ executá-lo em um **Arduino Nano com FreeRTOS** sobre uma planta térmica didát
 Trabalho de Conclusão de Curso em Engenharia de Controle e Automação — **UFRGS**
 Autor: **Thiago Miorando Tavolara** · Orientação: **Prof. Marcelo Götz**
 
-<!--
-  Captura da GUI: salve a imagem em documentacao/gui.png (de preferência
-  durante um ensaio, com a curva em andamento) e remova este comentário.
-
-![Interface de supervisão durante um ensaio](documentacao/gui.png)
--->
+![Interface de supervisão HVAC_TCC_GUI](documentacao/gui.png)
 
 ---
 
