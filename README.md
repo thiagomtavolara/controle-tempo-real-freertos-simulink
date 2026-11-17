@@ -32,7 +32,17 @@ Autor: **Thiago Miorando Tavolara** · Orientação: **Prof. Marcelo Götz**
 
 ## Por onde começar
 
-1. Abra o MATLAB na raiz do repositório e execute `configurar_pastas_simulink`.
+1. Abra o MATLAB na raiz do repositório e prepare o caminho:
+
+   ```matlab
+   % Execute inicialmente na raiz do repositório:
+   raiz = pwd;
+   addpath(fullfile(raiz, 'GUI'));
+   addpath(fullfile(raiz, ...
+       'exemplos_preparar_parametros_controladores_simulink'));
+   configurar_pastas_simulink;
+   ```
+
 2. Parta de um modelo em [`base_controladores_simulink/`](base_controladores_simulink):
    `simulink_base_PID.slx`, `simulink_base_Bang_Bang.slx` ou a base vazia `simulink_base_.slx`.
 3. Cadastre os parâmetros ajustáveis com os exemplos de
@@ -41,7 +51,6 @@ Autor: **Thiago Miorando Tavolara** · Orientação: **Prof. Marcelo Götz**
 4. Gere o código do subsistema `Controlador` (*Build This Subsystem*) e importe:
 
    ```matlab
-   configurar_pastas_simulink        % destinos de geração e cache
    preparar_pid                      % ou preparar_bangbang / seus parâmetros
    % Simulink: Build This Subsystem no subsistema Controlador
    importar_controlador              % atualiza src/gerado e perfil_controlador.txt
@@ -59,8 +68,9 @@ com capturas de tela.
 1. Execute o ensaio na planta e salve o CSV e o log pela GUI (**Salvar ensaio**).
 2. Reproduza no Simulink as mesmas condições: temperatura inicial, referência e
    parâmetros (`parametro_ajustavel`). A simulação é salva em `dados/simulacoes`.
-3. Na GUI, use **Simulação x planta**, selecione o CSV e depois o MAT. O resultado
-   (RMSE, MAE, erro máximo e figura) é salvo em `dados/comparacoes`.
+3. Na interface, use **Simulação x planta**, selecione o CSV e depois o MAT. Para
+   salvar os resultados, utilize **Salvar comparação (.mat)** e **Exportar gráficos
+   (.png)**. A pasta sugerida é `dados/comparacoes`.
 
 A GUI não altera os parâmetros do Simulink: reaplique no modelo os valores usados
 na planta antes de simular.
@@ -89,14 +99,16 @@ Os dados apresentados no trabalho estão em
 Cada pasta de ensaio contém o CSV e o log da planta, o MAT da simulação, o MAT e a
 figura da comparação, e um `DADOS.txt` com as condições do ensaio.
 
-| Pasta | Controlador | Referência | Parâmetros | T inicial |
+| Pasta | Controlador | Referência | Parâmetros | T inicial da simulação |
 |---|---|---|---|---|
 | `1_PID_referência_de_28_C` | PID | 28 °C | P = 4, I = 1, D = 0,2, N = 5 | 24,46 °C |
 | `2_PID_referência_de_30_C` | PID | 30 °C | P = 4, I = 1, D = 0,2, N = 5 | 23,92 °C |
 | `3_PID_com_outra_sintonia_30_C` | PID | 30 °C | P = 3, I = 1, D = 0,2, N = 5 | 23,13 °C |
 | `4_Bang_bang_referência_de_30_C` | Liga-desliga | 30 °C | histerese ±0,5 °C, saída 0 / 12 V | 24,15 °C |
 
-Todos com período de 0,2 s e cooler desligado. Na mesma pasta,
+Todos com período de 0,2 s e cooler desligado. A temperatura inicial é a condição
+adotada na simulação; em dois ensaios, difere ligeiramente da primeira temperatura
+medida. Na mesma pasta,
 `timer2_planta_parada.csv` registra a planta parada, sem atuação.
 
 O modelo da planta usado nas simulações está em
@@ -116,5 +128,6 @@ Para executar o PID, gere e importe o modelo `simulink_base_PID.slx`.
   [FreeRTOS para AVR](https://github.com/feilipu/Arduino_FreeRTOS_Library)
   (versão 11.1.0-3, licença MIT). Foram alterados apenas `src/FreeRTOSVariant.h` e
   `src/port.c`, para gerar o *tick* pelo Timer2 em vez do *watchdog*.
-- **Framework Arduino** (`atmelavr@5.3.0`): baixado pelo PlatformIO, não incluído.
+- **Plataforma Atmel AVR** (`atmelavr@5.3.0`) e **framework Arduino**: obtidos pelo
+  PlatformIO durante a preparação do ambiente.
 - MATLAB e Simulink são marcas registradas da The MathWorks, Inc.
