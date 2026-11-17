@@ -1,0 +1,11 @@
+Modelo Simulink: Controlador | ID: 42e6c08e5a7c665d
+Selecione a porta serial e conecte. Gráficos aguardando dados.
+[CONECTAR] Conectado com sucesso em COM6 (115200 baud).
+[TX] RUN,0
+[TX] INFO
+[FW] [OK] Parada solicitada
+[TX] HELLO,42e6c08e5a7c665d
+[FW] [INFO],42e6c08e5a7c665d,4,0.2,MA_SIM_3
+[PACOTE] Conferido. Selecione o modo e clique em Aplicar / iniciar.
+[FW] [HELLO],1
+[DOWNLOAD] Dados salvos em: C:\Users\Thiago\Documents\PlatformIO\Projects\Controle_FreeRTOS_Simulink\dados\ensaios\timer2_planta_parada.csv

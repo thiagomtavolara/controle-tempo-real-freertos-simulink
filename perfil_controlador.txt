@@ -1,0 +1,5 @@
+328856e577efcd11	Controlador	0.2
+hist_max	0.01	5
+hist_min	-5	-0.01
+u_max	0	12
+u_min	0	12
